@@ -45,7 +45,7 @@
         <a href="#about">about</a>
         <a href="#services">services</a>
         <a href="#education"> Education</a>
-        <a href="#portfolio">Projects</a>
+        <a href="#portfolio">portfolio</a>
         <a href="#contact">contact</a>
     </nav>
 
@@ -70,6 +70,16 @@
         <p>I am a <span id="ani1" style="color: indianred;"></span></p>
         <a href="file/Resume Web Dev.pdf" download="Dhiraj CV"> <button class="btn">Downlode CV</button> </a>
         
+    </div>
+
+    <div class="bouncy">
+        <ul>
+            <li> <i class="fab fa-css3"></i> </li>
+            <li><i class="fas fa-code"></i></li>
+            <li><i class="fab fa-js-square"></i></li>
+            <li><i class="fab fa-bootstrap"></i></li>
+            <li><i class="fab fa-react"></i></li>
+        </ul>
     </div>
 
     <div class="share">
@@ -102,8 +112,8 @@
                 <h3>6+</h3>
                 <p>satisfied clients</p>
             </div>
-            <div class="box">
-                <h3>190+</h3>
+            <div class="box">   
+                <h3><div id="num1"></div></h3>
                 <p>working hours</p>
             </div>
             <div class="box">
@@ -334,6 +344,22 @@
   backSpeed:100,
   loop: true
 });
+</script>
+
+
+<script>
+let num1 = document.getElementById('num1');
+let count = 0;
+setInterval( ()=>{
+if(count == 1000)
+{
+    clearInterval();
+}else{
+    count +=1;
+    num1.innerHTML = count + "+";
+}
+},10);
+
 </script>
 
 </body>

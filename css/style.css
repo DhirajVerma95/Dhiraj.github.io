@@ -65,6 +65,79 @@ section{
     box-shadow: var(--box-shadow-inset);
     color:var(--green);
 }
+/* 
+bouncing boll */
+
+.bouncy{
+    width: 350px;
+    height: 150px;
+    margin-top: 130px;
+    margin-bottom: -150px;
+    /* position:absolute; */
+}
+
+.bouncy ul{
+    display: flex;
+    /* border-bottom: 10px solid green; */
+}
+.bouncy ul li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bounc 3s linear infinite;
+}
+
+.bouncy ul li i{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 6px;
+    color: var(--black);;
+    
+}
+
+@keyframes bounc{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-120px); }
+    100%{transform: translateY(0);}
+}
+
+ul li:nth-child(1){
+    animation-delay: .2s;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+ul li:nth-child(2){
+    animation-delay: .6s;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+ul li:nth-child(3){
+    animation-delay: .4s;
+    background-color:var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+ul li:nth-child(4){
+    animation-delay: .8s;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+ul li:nth-child(5){
+    animation-delay: .5s;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    
+
+}
+
+/* 
+bouncungball end */
+
+
+
+
 
 .heading{
     text-align: center;
@@ -128,6 +201,7 @@ section{
 .header .navbar a:hover{
     box-shadow: var(--box-shadow-inset);
     color: var(--green);
+    font-size: 2.5rem;
 }
 
 #menu-btn{
@@ -184,7 +258,7 @@ section{
 }
 
 .home .content h3{
-    font-size: 7rem;
+    font-size: 6rem;
     color:var(--black);
     line-height: 1.1;
     text-transform: uppercase;
@@ -216,7 +290,7 @@ section{
     line-height: 5rem;
     box-shadow: var(--box-shadow);
     margin:.5rem;
-    font-size: 2rem;
+    font-size: 4rem;
     color:var(--black);
     border-radius: .5rem;
 }
