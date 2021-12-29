@@ -537,7 +537,7 @@ bouncungball end */
 .portfolio .box-container .box img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .portfolio .box-container .box .content{
